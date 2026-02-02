@@ -1,0 +1,2 @@
+Hello from FileOutputStream
+This is byte stream
