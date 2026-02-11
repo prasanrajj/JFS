@@ -15,6 +15,8 @@ public class ArrayListPlayground {
         list.add("Boot");
         list.add(null);
         list.add("Java");
+        list.add(0,"jjj");
+        
 
         System.out.println("\nList elements: " + list);
         System.out.println("Size after adding elements: " + list.size());
