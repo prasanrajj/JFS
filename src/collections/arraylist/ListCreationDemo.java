@@ -15,21 +15,17 @@ public class ListCreationDemo {
 
 		System.out.println("Mutable ArrayList: " + list1);
 
-		// List.of() (Java 9+) — Immutable
+		// Immutable
 		List<Integer> list2 = List.of(10, 20, 30);
-
 		System.out.println("List.of: " + list2);
-
 		// list2.add(40); ❌ UnsupportedOperationException
 
+		
 		// Arrays.asList() — Fixed size (not fully immutable)
 		List<Integer> list3 = Arrays.asList(10, 20, 30);
-
 		System.out.println("Arrays.asList: " + list3);
-
 		// list3.add(40); ❌ UnsupportedOperationException
 		// list3.remove(0); ❌ UnsupportedOperationException
-
 		list3.set(1, 99); // ✔ allowed (replace only)
 		System.out.println("After set(): " + list3);
 
