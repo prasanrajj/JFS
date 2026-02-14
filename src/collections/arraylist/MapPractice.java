@@ -42,6 +42,8 @@ public class MapPractice {
 		for (User user : map.values()) {
 			System.out.println(user);
 		}
+		
+		Set s = new HashSet<>();
 
 		// Using Iterator
 		System.out.println("\nIterator traversal:");
