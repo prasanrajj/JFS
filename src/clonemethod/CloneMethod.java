@@ -27,22 +27,29 @@ class User implements Cloneable {
 	User(String name, Location location) {
 		this.name = name;
 		this.location = location;
+
 	}
+
+	User(User user) {
+		this.name = user.name;
+		this.location = new Location(user.location);
+	}//COPY CONSTRUCTOR
 
 //    @Override
 //    public User clone() throws CloneNotSupportedException {
 //        return (User) super.clone(); // shallow copy
+//		   return new User(this);   
 //    }
 
 	@Override
 	public User clone() throws CloneNotSupportedException {
 		// original.location == copy.location (TRUE)
 		// ⚠️ Still shallow copy.
-		User copy = (User) super.clone(); 
-		
+		User copy = (User) super.clone();
+
 		// deep copy, original.location == copy.location (FALSE)
 		// Now changing clone won’t affect original.
-		copy.location = new Location(this.location); 
+		copy.location = new Location(this.location);
 		return copy;
 	}
 
