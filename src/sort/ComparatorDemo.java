@@ -56,7 +56,7 @@ public class ComparatorDemo {
 		System.out.println("Original:");
 		System.out.println(products);
 
-		// sort by price
+		// sort by pricee
 		Collections.sort(products, new PriceComparator());
 		System.out.println("\nSorted by price:");
 		System.out.println(products);
