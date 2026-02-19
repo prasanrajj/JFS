@@ -47,14 +47,14 @@ public class StreamFullPlayground {
 		System.out.println(totalSalary);
 
 		// 1) forEach
-		// pipeline.forEach(System.out::println);
+//		 pipeline.forEach(System.out::println);
 
 		// 2) collect
-		// List<Employee> list = pipeline.collect(Collectors.toList());
+//		 List<Employee> list = pipeline.collect(Collectors.toList());
 		// System.out.println(list);
 
 		// 3) toList (Java 16+)
-		// List<Employee> list2 = pipeline.toList();
+//		 List<Employee> list2 = pipeline.toList();
 		// System.out.println(list2);
 
 		// 4) count
@@ -80,7 +80,7 @@ public class StreamFullPlayground {
 		// System.out.println(all);
 
 		// 9) findFirst
-		// Optional<Employee> first = pipeline.findFirst();
+//		 Optional<Employee> first = pipeline.findFirst();
 		// System.out.println(first);
 
 	}
