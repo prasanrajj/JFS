@@ -69,8 +69,8 @@ public class StreamAllInOne {
         // ---------- average ----------
         double avg = numbers.stream()
                 .mapToInt(Integer::intValue)
-                .average()
-                .getAsDouble();
+                .average() // returns optional
+                .getAsDouble();//converts optional to primitive 
         System.out.println("Average: " + avg);
 
         // ---------- anyMatch / allMatch ----------
