@@ -1,15 +1,12 @@
 package java8.streams;
 import java.util.*;
 import java.util.stream.*;
-
 public class ReducePlayground {
     public static void main(String[] args) {
         List<Integer> nums = List.of(2, 4, 6, 8);
-
         // 1) SUM with identity
         int sum = nums.stream()
                 .reduce(0, (a, b) -> a + b);
-
         System.out.println("Sum = " + sum);
 
         // 2) SUM without identity → Optional
