@@ -1,6 +1,8 @@
 package java8.streams;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
 
 public class StreamBasicsDemo {
 
@@ -21,7 +23,7 @@ public class StreamBasicsDemo {
                     System.out.println("Mapping:=====================> " + n);
                     return n * 2;
                 });
-        Stream
+        
 
         System.out.println("No terminal operation yet → nothing executed");
 
