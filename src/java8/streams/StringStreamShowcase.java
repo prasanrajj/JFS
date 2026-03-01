@@ -14,7 +14,7 @@ public class StringStreamShowcase {
 		// Using chars() → IntStream → convert to Stream<String>
 		String uniqueCharacters = input.chars()// Using chars() → IntStream
 				.mapToObj(c -> String.valueOf((char) c))// convert to Stream<String>
-				.distinct().collect(Collectors.joining());
+				.distinct().collect(Collectors.joining());//works only on string
 		System.out.println("Unique Characters: " + uniqueCharacters);
 
 		// Filter only alphabets
