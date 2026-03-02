@@ -25,7 +25,6 @@ public class StringStreamShowcase {
 		// Filter only digits
 		String onlyDigits = input.chars().filter(Character::isDigit).mapToObj(c -> String.valueOf((char) c))
 				.collect(Collectors.joining());
-
 		System.out.println("Only Digits: " + onlyDigits);
 
 		// Sorted characters
