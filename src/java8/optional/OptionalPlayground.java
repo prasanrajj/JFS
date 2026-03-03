@@ -32,6 +32,8 @@ public class OptionalPlayground {
 		System.out.println(opt1.get());
 		// Uncomment below to see exception
 		// Optional<String> optError = Optional.of(null);
+		Optional<String> opt = Optional.empty();
+		//opt.get();   // NoSuchElementException
 		System.out.println("--------------------------------");
 
 		// Optional.ofNullable()
