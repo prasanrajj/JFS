@@ -62,6 +62,6 @@ public class DateTimePlayground {
         System.out.println("To LocalTime: " + dateTime.toLocalTime());
         // Custom DateTime format
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-        System.out.println("Formatted DateTime: " + dateTime.format(dateTimeFormatter));
+        System.out.println("Formatted DateTime: " + dateTime.format(dateTimeFormatter));;
     }
 }
